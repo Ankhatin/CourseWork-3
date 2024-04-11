@@ -3,3 +3,4 @@
 data/
 poetry.lock
 pyproject.toml
+.idea/

@@ -1,6 +1,6 @@
 # Default ignored files
 
-data/
+data\
 poetry.lock
 pyproject.toml
-.idea/
+.idea\

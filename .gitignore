@@ -1,0 +1,5 @@
+# Default ignored files
+
+data/
+poetry.lock
+pyproject.toml

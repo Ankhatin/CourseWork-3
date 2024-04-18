@@ -1,14 +1,14 @@
 import json
 import datetime
-import os.path
+import os
 
 def load_transactions(file_name):
     '''
     Функция открывает файл с данными по операциям
     и возвращает в виде списка словарей
     '''
-    path = os.path.dirname(os.path.abspath(file_name))
-    path = os.path.join(path, r'data\operations.json')
+    path_to_root = os.path.dirname(os.path.abspath(__file__))
+    path = os.path.join(path_to_root, rf'data\{file_name}')
     with open(path, 'r', encoding="utf-8") as file:
         transactions = json.load(file)
         return transactions
